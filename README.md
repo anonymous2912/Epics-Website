@@ -13,3 +13,9 @@ Calm Aura helps you monitor your depression and brings together techniques from 
 <p align="center">
   <img width="" height="" src="opt/system_architecture.png">
 </p>
+
+## Hadware Simulation
+
+<p align="center">
+  <img width="460" height="400" src="">
+</p>
