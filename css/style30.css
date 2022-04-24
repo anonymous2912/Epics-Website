@@ -1,0 +1,303 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 300px;
+  margin-left: 5%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card-front h2{
+  font-weight: bold;
+  color:#43556b;
+  margin-top: 1.2%;
+
+}
+label{
+    font-size: 105%;
+}
+.form-check{
+  width: 30px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#button {
+  color: #f1f1f1;
+  background-color:#41AADA;
+    border-color: #0dcaf0; 
+}
+
+#button:active{
+    background:olive;
+}
+
+#button:focus{
+    background:olive;
+}
+
+
+.two, .three , .six {
+  background-color:  #f9d5a7;
+  color: #43556b;
+}
+.one ,  .four, .five{
+  background-color: #FFB085;
+  color: #43556b;
+}
+span{
+  font-weight: bold;
+}
+h4{
+  font-weight: bold;
+}
+    .list-group-horizontal .list-group-item {
+  display: inline-block; 
+}
+.btn-info{
+  border-radius: 10px;
+   background-color:#41AADA;
+    border-color: #0dcaf0; 
+    
+}
+.list-group-horizontal .list-group-item:focus {
+  background-color: #41AADA !important; 
+  color:#fff;
+  display: inline-block;
+}
+.list-group-horizontal .list-group-item {
+  margin-bottom: 0;
+  margin-left:-4px;
+  margin-right: 0;
+}
+.list-group-horizontal .list-group-item:first-child {
+  border-top-right-radius:0;
+  border-bottom-left-radius:4px;  
+}
+.list-group-horizontal .list-group-item:last-child {
+  border-top-right-radius:4px;
+  border-bottom-left-radius:0;   
+}
+.form-check label {
+  /*padding:.75rem 1.25rem;*/
+  margin-bottom:0;
+}
+.form-check label input[type="checkbox"] {
+  opacity:0;
+}
+
+/*Medtating timer*/
+
+.base-timer {
+  margin-top: 5%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  height: 170px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+/*to-do list*/
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 5px 5px 10px 5px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 14px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 5px 5px 5px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  /*background-color: #f44336;*/
+  /*padding: 30px 40px;*/
+  padding-bottom: 3%;
+  color: #FFB085;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 5px;
+  float: left;
+  font-size: 14px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 5px;
+  width: 25%;
+  background: #FFB085;
+  color: white;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #c48664;
+}
+#to-do{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FEF1E6;
+  padding: 7px;
+  border-radius: 5px;
+
+}

@@ -1,0 +1,128 @@
+* {
+  font-family: Montserrat;
+}
+/* body{
+  background-color: white !important;
+} */
+
+#depression-monitor {
+  padding: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-depression {
+  width: 75%;
+  height: 150% !important;
+  margin: 0 10%;
+  text-align: justify;
+}
+
+.top-img img {
+  height: 70%;
+  width: 60%;
+}
+
+.top-img {
+   top: 50%;
+    right: 50%;
+display: flex;
+  align-items:center;
+}
+
+
+.abt-dep-mon {
+  text-align: center;
+  margin: 0 10%;
+}
+
+.h1 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-blue {
+  color: rgb(255, 255, 255);
+  background-color: #90aacb;
+  border-color: #90aacb;
+}
+
+.btn-outline-blue {
+  color: #90aacb;
+  background-color: rgb(255, 255, 255);
+  border-color: #90aacb;
+}
+
+.leaves {
+width: 22%;
+height: 22%;
+}
+
+.f-img {
+  width: 40%;
+}
+
+.frame-left {
+  background-color: #f9d5a7;
+}
+
+.frame-right {
+  background-color: #ffb085;
+}
+
+@media only screen and (max-width: 768px) {
+  #frame2 .row .frame-left {
+    background-color: #ffb085;
+  }
+
+  #frame2 .row .frame-right {
+    background-color: #f9d5a7;
+  }
+}
+
+.frame-right,
+.frame-right {
+  padding: 10px;
+}
+
+.frame-left .h1,
+.frame-right .h1 {
+  font-size: 2.4rem;
+}
+
+.table-left {
+  align-items: left;
+  text-align: left;
+}
+
+.table-right {
+  align-items: right;
+  text-align: right;
+}
+
+.table-right p{
+padding-left: 10vw;
+
+/* height: fit-content; */
+}
+
+.table-right p.h1 {
+/* font-size: 4px; */
+font-weight: 600;
+}
+
+table,
+tr,
+td {
+  border: 2px solid white;
+}
+.ch{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.md{
+  color: black;
+  text-decoration: none;
+}
