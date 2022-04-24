@@ -1,7 +1,7 @@
 ## Depression Detection using CNN model and ML Techniques
 
 <p align="center">
-  <img width="460" height="400" src="opt/Depression.gif">
+  <img width="460" height="400" src="opt/Getting_Coffee.gif">
 </p>
 
 ## Description
